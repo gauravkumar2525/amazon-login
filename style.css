@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.auth-box {
+    height: 300px;
+    width: 275px;
+    border: 1.6px solid rgb(199, 199, 199);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    width: 300px;
+}
+
+input {
+    width: 320px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 3px 2px rgba(4, 207, 243, 0.5);
+    background-color: rgba(9, 212, 248, 0.05);
+}
+
+.continue-btn {
+    width: 320px;
+    height: 30px;
+    background-color: rgb(255, 199, 0);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.continue-btn p {
+    font-size: 13px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link-small {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.link-small .link{
+    text-decoration: underline;
+}
+
+.divider {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 320px;
+    height: 0.6px;
+    background-color: rgb(199, 199, 199);
+}
+
+.footer-divider {
+    width: 100vw;
+    height: 0.27vh;
+    background-color: rgb(221, 218, 218);
+    margin-bottom: 4vh;
+}
+
+.footer-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 2.2vw;
+    font-size: 0.8rem;
+}
+
+.footer-link:hover,
+.link:hover {
+    text-decoration: underline;
+}
+
+.footer-note {
+    color: rgb(77, 75, 75);
+    letter-spacing: 0.3px;
+    font-size: 0.8rem;
+    margin-top:2vh;
+    margin-bottom: 2vh;
+}
+
+
+@media (max-width: 480px) {
+    .auth-box {
+        width: 90vw;
+        padding: 15px;
+    }
+
+    input, .continue-btn, .divider {
+        width: 100%;
+    }
+
+    .label {
+        width: 100%;
+    }
+
+    .header img {
+        width: 80px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+        margin-right: 4vw;
+    }
+
+    .footer-note {
+        font-size: 12px;
+        text-align: center;
+    }
+}
